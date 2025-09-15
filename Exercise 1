@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Lists Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #2e6da4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Lists Demonstration</h1>
+
+    <h2>1. Ordered List</h2>
+    <ol>
+        <li>Wake up</li>
+        <li>Brush your teeth</li>
+        <li>Have breakfast</li>
+        <li>Go to work</li>
+    </ol>
+
+    <h2>2. Unordered List</h2>
+    <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Cherries</li>
+        <li>Grapes</li>
+    </ul>
+
+    <h2>3. Nested Lists</h2>
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+            </ul>
+        </li>
+        <li>Vegetables
+            <ul>
+                <li>Carrot</li>
+                <li>Spinach</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. Ordered List inside an Unordered List</h2>
+    <ul>
+        <li>Steps to Prepare Tea:
+            <ol>
+                <li>Boil water</li>
+                <li>Add tea leaves</li>
+                <li>Add milk and sugar</li>
+                <li>Strain and serve</li>
+            </ol>
+        </li>
+        <li>Enjoy your tea!</li>
+    </ul>
+
+    <h2>5. Definition List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language - the standard language for creating web pages.</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets - used to style HTML elements.</dd>
+        <dt>JavaScript</dt>
+        <dd>A scripting language used to create dynamic content on web pages.</dd>
+    </dl>
+
+</body>
+</html>
