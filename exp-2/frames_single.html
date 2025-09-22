@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frames Example</title>
+</head>
+<frameset rows="33%,33%,34%" noresize>
+    <frame src="data:image/html,<html><body><img src='https://via.placeholder.com/300' alt='Image' style='width:100%%;height:100%%;'></body></html>" name="frame1">
+    <frame src="data:text/html,<html><body><p>This is a paragraph inside the second frame. Frames allow displaying multiple documents in one window.</p></body></html>" name="frame2">
+    <frame src="data:text/html,<html><body><a href='https://www.example.com' target='_blank'>Visit Example Website</a></body></html>" name="frame3">
+    <noframes>
+        <body>
+            Your browser does not support frames.
+        </body>
+    </noframes>
+</frameset>
+</html>
