@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>CSS Selector Forms</title>
+<style>
+  p {
+    color: blue;
+  }
+  #unique {
+    font-weight: bold;
+  }
+  .highlight {
+    background-color: yellow;
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  * {
+    font-family: Arial, sans-serif;
+  }
+  div p {
+    border: 1px solid gray;
+    padding: 5px;
+  }
+  ul > li {
+    color: green;
+  }
+  h2 + p {
+    font-style: italic;
+  }
+  h2 ~ p {
+    font-size: 14px;
+    color: purple;
+  }
+  a:hover {
+    color: red;
+  }
+  li:first-child {
+    font-weight: bold;
+  }
+  li:last-child {
+    text-decoration: underline;
+  }
+  p::first-letter {
+    font-size: 200%;
+    color: orange;
+  }
+  p::before {
+    content: "Note: ";
+    font-weight: bold;
+  }
+  a[target="_blank"] {
+    color: teal;
+  }
+  input[type="text"] {
+    border: 2px solid blue;
+  }
+</style>
+</head>
+<body>
+
+<h1>Simple Selectors</h1>
+<p>This paragraph uses element selector.</p>
+<p id="unique">This paragraph uses ID selector.</p>
+<p class="highlight">This paragraph uses class selector.</p>
+<h2>Group Selector: H1 and H2</h2>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+
+<h1>Combinator Selectors</h1>
+<div>
+  <p>Descendant selector: paragraph inside div.</p>
+</div>
+<ul>
+  <li>Child selector: first list item</li>
+  <li>Child selector: second list item</li>
+</ul>
+<h2>Adjacent Sibling</h2>
+<p>This paragraph follows h2 and is styled by adjacent sibling selector.</p>
+<h2>General Sibling</h2>
+<p>This paragraph is a general sibling of h2.</p>
+<p>Another general sibling paragraph of h2.</p>
+
+<h1>Pseudo-class Selectors</h1>
+<ul>
+  <li>First child</li>
+  <li>Middle item</li>
+  <li>Last child</li>
+</ul>
+<a href="#" target="_blank">Link with target="_blank" (attribute selector + pseudo-class on hover)</a><br>
+<a href="#">Regular link</a>
+
+<h1>Pseudo-element Selectors</h1>
+<p>This paragraph uses ::first-letter and ::before pseudo-elements.</p>
+
+<h1>Attribute Selector</h1>
+<input type="text" placeholder="Text input field" />
+<input type="password" placeholder="Password input field" />
+
+</body>
+</html>
