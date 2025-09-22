@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Internal and External JavaScript in One File</title>
+<script>
+  function internalGreet() {
+    alert("Hello from internal JavaScript!");
+  }
+</script>
+<script>
+  function externalGreet() {
+    alert("Hello from external JavaScript!");
+  }
+</script>
+</head>
+<body>
+  <button onclick="internalGreet()">Internal JS Alert</button>
+  <button onclick="externalGreet()">External JS Alert</button>
+</body>
+</html>

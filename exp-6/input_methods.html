@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>JavaScript Input Methods</title>
+</head>
+<body>
+  <input type="text" id="inputField" placeholder="Enter something" />
+  <button onclick="takeInput()">Submit</button>
+  <p id="display"></p>
+  <script>
+    function takeInput() {
+      let val1 = prompt("Enter value using prompt:");
+      let val2 = document.getElementById('inputField').value;
+      let val3 = confirm("Click OK to confirm input:");
+      document.getElementById('display').innerHTML = 
+        "Prompt: " + val1 + "<br>" + 
+        "Text Field: " + val2 + "<br>" + 
+        "Confirm: " + val3;
+    }
+  </script>
+</body>
+</html>
