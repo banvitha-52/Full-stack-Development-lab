@@ -1,0 +1,12 @@
+let now = new Date();
+console.log("Current Date and Time: " + now);
+console.log("Year: " + now.getFullYear());
+console.log("Month (0-11): " + now.getMonth());
+console.log("Date: " + now.getDate());
+console.log("Hours: " + now.getHours());
+console.log("Minutes: " + now.getMinutes());
+console.log("Seconds: " + now.getSeconds());
+now.setFullYear(2020);
+console.log("Updated year: " + now.getFullYear());
+console.log("Date string: " + now.toDateString());
+console.log("ISO string: " + now.toISOString());

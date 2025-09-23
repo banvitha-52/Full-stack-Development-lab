@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document Object Example</title>
+</head>
+<body>
+
+<h1 id="header">Hello World</h1>
+
+<script>
+  console.log("Title of the document: " + document.title);
+  document.title = "New Title";
+  let header = document.getElementById("header");
+  header.textContent = "Hello from JavaScript!";
+  let p = document.createElement("p");
+  p.textContent = "This paragraph was added using document.createElement and appendChild.";
+  document.body.appendChild(p);
+</script>
+
+</body>
+</html>

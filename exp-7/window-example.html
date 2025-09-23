@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Object Example</title>
+</head>
+<body>
+
+<script>
+  window.alert("Welcome to the Window Object demo!");
+  console.log("Window inner width: " + window.innerWidth);
+  console.log("Window inner height: " + window.innerHeight);
+  let name = window.prompt("What is your name?");
+  window.document.body.innerHTML = `<h2>Hello, ${name}!</h2>`;
+  if (window.confirm("Do you like JavaScript?")) {
+    console.log("User likes JavaScript.");
+  } else {
+    console.log("User does not like JavaScript.");
+  }
+</script>
+
+</body>
+</html>

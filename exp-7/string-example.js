@@ -1,0 +1,10 @@
+let str = "Hello, JavaScript!";
+console.log("Length of string: " + str.length);
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log("Substring (0,5): " + str.substring(0, 5));
+console.log("Includes 'Java'? " + str.includes("Java"));
+let newStr = str.replace("JavaScript", "World");
+console.log(newStr);
+let words = str.split(", ");
+console.log(words);
